@@ -5,6 +5,13 @@
 * 네오픽셀을 사용하므로 neopixel.py 파일이 같은 폴더에 있어야 함  
 * 시간 정보를 표시할 때는 timezoneChange.py 파일이 같은 폴더에 있어야 함  
 * 시간 정보를 표시하고 싶지 않을 때는 fineDust.py 파일의 7번 줄, 89~92번 줄을 주석처리함  
+* 회로도
+| pico W  | neopixel |
+|--------|----------|
+| GPIO 0 | in     |
+| VBUS   | VCC       |
+| GND    | GND      |
+
 
 ## 재료  
 * [라즈베리파이 피코 W](https://www.devicemart.co.kr/goods/view?no=14575953&gclid=Cj0KCQjw_r6hBhDdARIsAMIDhV-v3VZrlmb37R6pssNcH_zarbtBYylBcQEg87EjIj7Ci5817f7wSjMaAiILEALw_wcB)  
