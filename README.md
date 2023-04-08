@@ -8,7 +8,7 @@
 
 ## 재료  
 * [라즈베리파이 피코 W](https://www.devicemart.co.kr/goods/view?no=14575953&gclid=Cj0KCQjw_r6hBhDdARIsAMIDhV-v3VZrlmb37R6pssNcH_zarbtBYylBcQEg87EjIj7Ci5817f7wSjMaAiILEALw_wcB)  
-![image](https://user-images.githubusercontent.com/13882302/230707541-13ac0fa9-da58-4920-aa5e-0cc93dffff38.png)  
+![image](https://user-images.githubusercontent.com/13882302/230707541-13ac0fa9-da58-4920-aa5e-0cc93dffff38.png width=100)  
 
 * [네오픽셀 WS2812B-4 5V 5050 RGB LED](https://ko.aliexpress.com/item/32645620129.html?gatewayAdapt=glo2kor)  
 ![image](https://user-images.githubusercontent.com/13882302/230707501-7a17d3d6-bcad-4253-9b4d-25588d5b8f93.png)  
