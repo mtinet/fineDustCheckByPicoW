@@ -8,8 +8,8 @@
 
 ## 회로도  
 | pico W  | neopixel |
-|--------|----------|
-| GPIO 0 | in     |
+|:------:|:--------:|
+| GPIO 0 | IN     |
 | VBUS   | VCC       |
 | GND    | GND      |
 
