@@ -156,7 +156,7 @@ while True:
         print(location, lat, lon)
 
         try:
-            # 다음 도시의 공기질 정보 보여주
+            # 다음 도시의 공기질 정보 보여주기  
             air_quality_index = get_air_quality_index(lat, lon, API_KEY)
             set_neopixel_color(air_quality_index)
             print()
