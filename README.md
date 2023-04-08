@@ -30,6 +30,7 @@
 | pico W  | button |
 |:------:|:--------:|
 | GPIO 9 | sig     |
+| GND    | GND      |
 
 
 ## 재료  
