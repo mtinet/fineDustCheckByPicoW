@@ -41,6 +41,7 @@ from timezoneChange import timeOfSeoul # timezoneChange.py 파일이 같은 폴�
 API_KEY = '24109ddecb29a5405afe2a8df42c5e34'
 
 # 확인하고 싶은 자신의 GPS 정보
+# 서울시청(37.566, 126.9784), 샌프란시스코(37.77493, -122.41942), 세비야(37.38283, -5.97317)
 LATITUDE = '37.566'
 LONGITUDE = '126.9784'
 
@@ -59,7 +60,6 @@ strip = Neopixel(numpix, PIO, Pin, "RGB")
 
 # 밝기 설정(0~255)
 strip.brightness(150)
-color = (255, 200, 0)
 
 # 와이파이 연결하기
 wlan = network.WLAN(network.STA_IF)
@@ -77,22 +77,34 @@ else:
     print("WiFi is Connected")
     print()
 
-print("There are 5 levels from 1 to 5...")
-print()
     
 def get_air_quality_index(lat, lon, api_key):
     # 아래의 날씨 정보나 공기 오염도 조회 주소를 복사하여 브라우저의 주소창에 넣고 엔터를 누르면 JSON의 형태로 데이터를 받아볼 수 있음 
     # 날씨 정보 조회
     # http://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}
+    urlWeather = f'http://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}'
+    response = urequests.get(urlWeather)
+    dataWeather = response.json()
+
     # 공기 오염도 조회
     # http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={api_key}
-    url = f'http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={api_key}'
-    response = urequests.get(url)
-    data = response.json()
+    urlAQI = f'http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={api_key}'
+    response = urequests.get(urlAQI)
+    dataAQI = response.json()
+    
+    # weather는 설명이 직접 넘어옴
+    weatherID = dataWeather['weather'][0]['id']
+    weather = dataWeather['weather'][0]['description']
+    location = dataWeather['name']
+    print(f'Location: {location}')
+    print(f'WeatherID: {weatherID}')
+    print(f'Weather: {weather}')
+
     # aqi는 Air Quality Index
     # aqi = 1 # 1~5까지의 인덱스로 아래의 실제 데이터 대신 테스트 해볼 수 있음 
-    aqi = data['list'][0]['main']['aqi']
-    print("The Air Polution Index value is: " + str(aqi))
+    aqi = dataAQI['list'][0]['main']['aqi']
+    print("AQI: " + str(aqi) + "[Good(1)~Bad(5)]")
+    
     return aqi
 
 def set_neopixel_color(aqi):
@@ -131,6 +143,10 @@ while True:
 
     time.sleep(60 * 15)  # 매 15분마다 업데이트 
    
+
+
+
+
 
 ```
 
