@@ -30,8 +30,8 @@ else:
     print(wlan.ifconfig())
     print("WiFi is Connected")
     print()
-    
-    
+
+
 # 자기 정보 넣기(Open Wether Map API Key, 측정하고자 하는 곳의 위도, 경도 정보, 자신이 사용하는 WiFi정보) 
 # https://openweathermap.org/appid 에서 로그인 하고 https://home.openweathermap.org/api_keys 로 이동해서 API Key를 발급받음
 API_KEY = '24109ddecb29a5405afe2a8df42c5e34'
@@ -65,9 +65,9 @@ fb = framebuf.FrameBuffer(buffer, 32, 32, framebuf.MONO_HLSB)
 # 프레임 버퍼에서 OLED 디스플레이로 이미지 옮기기
 oled.blit(fb, 96, 0)
 # 글자 넣기
-oled.text("SmartFarm", 0, 25)
-oled.text("  has been", 0, 35)
-oled.text("    initialized.", 0, 45)
+oled.text("Weather Station", 0, 30)
+oled.text("   powered by", 0, 40)
+oled.text("     RPi Pico W.", 0, 50)
 # 이미지와 글자가 보여지도록 하기
 oled.show()
 
@@ -96,12 +96,16 @@ last_debounce_time = time.ticks_ms()
 # 위치에 따른 공기질 정보 가져오기  
 def get_air_quality_index(lat, lon, api_key):
     # 아래의 날씨 정보나 공기 오염도 조회 주소를 복사하여 브라우저의 주소창에 넣고 엔터를 누르면 JSON의 형태로 데이터를 받아볼 수 있음 
+    # 시간 정보 보여주기  
+    updatedTime = timeOfSeoul()
+    print(updatedTime)
+
     # 날씨 정보 조회
     # http://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}
     urlWeather = f'http://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}'
     response = urequests.get(urlWeather)
     dataWeather = response.json()
-    
+
     # 공기 오염도 조회
     # http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={api_key}
     urlAQI = f'http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={api_key}'
@@ -121,6 +125,20 @@ def get_air_quality_index(lat, lon, api_key):
     # aqi = 1 # 1~5까지의 인덱스로 아래의 실제 데이터 대신 테스트 해볼 수 있음 
     aqi = dataAQI['list'][0]['main']['aqi']
     print("AQI: " + str(aqi) + "[Good(1)~Bad(5)]")
+
+    # OLED에 출력하기
+    oled.fill(0)
+    # 프레임버퍼로 로고 불러오기(이미지 사이즈는  32x32)
+    fb = framebuf.FrameBuffer(buffer, 32, 32, framebuf.MONO_HLSB)
+    # 프레임 버퍼에서 OLED 디스플레이로 이미지 옮기기
+    oled.blit(fb, 96, 0)
+    # 글자 넣기
+    oled.text("Loc:" + location, 0, 10)
+    oled.text("Wea:" + weather, 0, 25)
+    oled.text("AQI:" + str(aqi) +"(1~5)", 0, 40)
+    oled.text(updatedTime, 0, 55)
+    # 이미지와 글자가 보여지도록 하기
+    oled.show()
 
     return aqi
 
@@ -152,7 +170,7 @@ def check_button():
     button_state = button.value()
     if button_state != previous_button_state:
         last_debounce_time = time.ticks_ms()
-    
+
     if button_state != previous_button_state:
         previous_button_state = button_state
         if not button_state:
@@ -174,14 +192,14 @@ dataAQI = response.json()
 air_quality_index = get_air_quality_index(locations[0][1], locations[0][2], API_KEY)
 set_neopixel_color(air_quality_index)
 print()
-    
-    
+
+
 while True:
     if check_button():
         # 시간 정보 보여주기  
         updatedTime = timeOfSeoul()
         print(updatedTime)
-        
+
         # 위치 정보 보여주기
         location, lat, lon = locations[current_location_index]
         print(location, lat, lon)
@@ -197,5 +215,3 @@ while True:
             strip.show()
 
     time.sleep(0.1)  # Check the button state more frequently
-
-
