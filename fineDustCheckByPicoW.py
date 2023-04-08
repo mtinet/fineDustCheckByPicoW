@@ -45,7 +45,9 @@ else:
     print(wlan.ifconfig())
     print("WiFi is Connected")
     print()
-    
+
+print("There are 5 levels from 1 to 5...")
+print()
     
 def get_air_quality_index(lat, lon, api_key):
     # 아래의 날씨 정보나 공기 오염도 조회 주소를 복사하여 브라우저의 주소창에 넣고 엔터를 누르면 JSON의 형태로 데이터를 받아볼 수 있음 
@@ -59,7 +61,7 @@ def get_air_quality_index(lat, lon, api_key):
     # aqi는 Air Quality Index
     # aqi = 1 # 1~5까지의 인덱스로 아래의 실제 데이터 대신 테스트 해볼 수 있음 
     aqi = data['list'][0]['main']['aqi']
-    print("The Air Polution Index value is " + str(aqi) + ". (There are 5 levels from 1 to 5)")
+    print("The Air Polution Index value is: " + str(aqi))
     return aqi
 
 def set_neopixel_color(aqi):
