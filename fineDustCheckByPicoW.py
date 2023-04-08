@@ -11,9 +11,11 @@ from timezoneChange import timeOfSeoul # timezoneChange.py 파일이 같은 폴�
 API_KEY = '24109ddecb29a5405afe2a8df42c5e34'
 
 # 확인하고 싶은 자신의 GPS 정보
-# 서울시청(37.566, 126.9784), 샌프란시스코(37.77493, -122.41942), 세비야(37.38283, -5.97317)
-LATITUDE = '37.566'
-LONGITUDE = '126.9784'
+locations = [
+    ('Seoul', '37.566', '126.9784'),
+    ('San Francisco', '37.77493', '-122.41942'),
+    ('Sevilla', '37.38283', '-5.97317')
+]
 
 # 와이파이 정보 
 SSID = 'U+Net454C'
@@ -103,16 +105,15 @@ while True:
     # print(type(updatedTime))
     print(updatedTime)
     
-    try:
-        air_quality_index = get_air_quality_index(LATITUDE, LONGITUDE, API_KEY)
-        set_neopixel_color(air_quality_index)
-    except Exception as e:
-        print("Error:", e)
-        color = (0, 0, 0)  # Black
-        strip.show()
-
-    time.sleep(60 * 15)  # 매 15분마다 업데이트 
-   
-
-
+    for location, lat, lon in locations:
+        try:
+            air_quality_index = get_air_quality_index(lat, lon, API_KEY)
+            set_neopixel_color(air_quality_index)
+        except Exception as e:
+            print("Error:", e)
+            color = (0, 0, 0)  # Black
+            strip.show()
+        
+        time.sleep(5)  # 각 위치마다 5초 간격으로 업데이트
+        print()
 
