@@ -11,6 +11,7 @@ from timezoneChange import timeOfSeoul # timezoneChange.py 파일이 같은 폴�
 API_KEY = '24109ddecb29a5405afe2a8df42c5e34'
 
 # 확인하고 싶은 자신의 GPS 정보
+# 서울시청(37.566, 126.9784), 샌프란시스코(37.77493, -122.41942), 세비야(37.38283, -5.97317)
 LATITUDE = '37.566'
 LONGITUDE = '126.9784'
 
@@ -101,4 +102,7 @@ while True:
 
     time.sleep(60 * 15)  # 매 15분마다 업데이트 
    
+
+
+
 
