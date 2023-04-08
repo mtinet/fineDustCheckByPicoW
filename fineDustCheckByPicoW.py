@@ -1,3 +1,5 @@
+# This code was written by Juhyun Kim.
+
 import time
 from neopixel import Neopixel
 import network
@@ -86,8 +88,8 @@ while True:
         set_neopixel_color(air_quality_index)
     except Exception as e:
         print("Error:", e)
-        strip[0] = (0, 0, 255)  # Blue (unknown)
+        color = (0, 0, 0)  # Black
         strip.show()
 
-    time.sleep(60 * 15)  # Update every 15 minutes
+    time.sleep(60 * 15)  # 매 15분마다 업데이트 
    
