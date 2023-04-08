@@ -4,14 +4,27 @@
 * Pico W를 활용해 Open Wether Map에서 받아온 공기 오염도의 공기질 인덱스에 따라 네오픽셀이 제어되도록 하는 코드  
 * 네오픽셀을 사용하므로 neopixel.py 파일이 같은 폴더에 있어야 함  
 * 시간 정보를 표시할 때는 timezoneChange.py 파일이 같은 폴더에 있어야 함  
-* 시간 정보를 표시하고 싶지 않을 때는 fineDust.py 파일의 7번 줄, 89~92번 줄을 주석처리함  
 
+## 파일 설명  
+* autoFineDustCheckByPicoW.py: 자동으로 5초마다 지정해 놓은 지역 정보를 확인  
+* base.py: 기초 코드  
+* buttonFineDustCheckByPicoW.py: 버튼을 누르면 지역이 바뀌는 코드  
+* main.py: 버튼 코드에 OLED 추가  
+* neopixel.py: 네오픽셀 라이브러리  
+* timezoneChange.py: 시간정보용 라이브러리  
 
 ## 회로도  
 | pico W  | neopixel |
 |:------:|:--------:|
 | GPIO 0 | IN     |
 | VBUS   | VCC       |
+| GND    | GND      |
+
+| pico W  | OLED |
+|:------:|:--------:|
+| GPIO 14 | SDA     |
+| GPIO 15 | SCL     |
+| 3.3V    | VCC       |
 | GND    | GND      |
 
 
