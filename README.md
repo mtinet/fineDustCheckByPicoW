@@ -9,7 +9,8 @@
 import time
 from neopixel import Neopixel
 import network
-import urequests
+import urequests 
+from timezoneChange import timeOfSeoul # timezoneChange.py 파일이 같은 폴더에 있어야 동작함 
 
 # 자기 정보 넣기(Open Wether Map API Key, 측정하고자 하는 곳의 위도, 경도 정보, 자신이 사용하는 WiFi정보) 
 # https://openweathermap.org/appid 에서 로그인 하고 https://home.openweathermap.org/api_keys 로 이동해서 API Key를 발급받음
@@ -91,6 +92,11 @@ def set_neopixel_color(aqi):
         strip.show()
 
 while True:
+    # 시간정보 가져오기
+    updatedTime = timeOfSeoul()
+    # print(type(updatedTime))
+    print(updatedTime)
+    
     try:
         air_quality_index = get_air_quality_index(LATITUDE, LONGITUDE, API_KEY)
         set_neopixel_color(air_quality_index)
@@ -101,5 +107,6 @@ while True:
 
     time.sleep(60 * 15)  # 매 15분마다 업데이트 
    
+
 ```
 
