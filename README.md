@@ -1,7 +1,7 @@
 # fineDustCheckByPicoW
 
 ## 결과물  
-https://user-images.githubusercontent.com/13882302/230708215-949f96aa-df82-4557-bcba-3c269979c67e.mp4
+https://user-images.githubusercontent.com/13882302/230721541-6345da0b-1c8c-4194-91d1-0210a41e9d8d.mp4
 
 
 ## Air Polution Index   
