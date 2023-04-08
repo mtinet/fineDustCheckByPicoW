@@ -27,6 +27,10 @@
 | 3.3V    | VCC       |
 | GND    | GND      |
 
+| pico W  | button |
+|:------:|:--------:|
+| GPIO 9 | sig     |
+
 
 ## 재료  
 * [라즈베리파이 피코 W](https://www.devicemart.co.kr/goods/view?no=14575953&gclid=Cj0KCQjw_r6hBhDdARIsAMIDhV-v3VZrlmb37R6pssNcH_zarbtBYylBcQEg87EjIj7Ci5817f7wSjMaAiILEALw_wcB)  
