@@ -10,7 +10,7 @@ from timezoneChange import timeOfSeoul # timezoneChange.py 파일이 같은 폴�
 # https://openweathermap.org/appid 에서 로그인 하고 https://home.openweathermap.org/api_keys 로 이동해서 API Key를 발급받음
 API_KEY = '24109ddecb29a5405afe2a8df42c5e34'
 
-# 확인하고 싶은 자신의 GPS 정보
+# 확인하고 싶은 위치 정보 입력 
 locations = [
     ('Seoul', '37.566', '126.9784'),
     ('San Francisco', '37.77493', '-122.41942'),
@@ -65,6 +65,7 @@ def get_air_quality_index(lat, lon, api_key):
     dataAQI = response.json()
     
     # weather는 설명이 직접 넘어옴
+    # WeatherID 참고 링크: https://injunech.tistory.com/178
     weatherID = dataWeather['weather'][0]['id']
     weather = dataWeather['weather'][0]['description']
     location = dataWeather['name']
