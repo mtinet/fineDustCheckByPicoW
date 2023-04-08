@@ -6,6 +6,11 @@
 * 시간 정보를 표시할 때는 timezoneChange.py 파일이 같은 폴더에 있어야 함  
 * 시간 정보를 표시하고 싶지 않을 때는 fineDust.py 파일의 7번 줄, 89~92번 줄을 주석처리함  
 
+## 재료  
+* 네오픽셀 WS2812B-4 5V 5050 RGB LED(https://ko.aliexpress.com/item/32645620129.html?gatewayAdapt=glo2kor)
+![image](https://user-images.githubusercontent.com/13882302/230707501-7a17d3d6-bcad-4253-9b4d-25588d5b8f93.png)
+
+
 ```python
 # This code was written by Juhyun Kim.
 
