@@ -5,7 +5,10 @@ from neopixel import Neopixel
 import network
 import urequests
 from timezoneChange import timeOfSeoul # timezoneChange.py 파일이 같은 폴더에 있어야 동작함 
-import machine
+from machine import I2C
+import machine 
+from ssd1306 import SSD1306_I2C
+import framebuf
 
 
 # 와이파이 정보 
@@ -40,6 +43,34 @@ locations = [
     ('Sevilla', '37.38283', '-5.97317')
 ]
 
+# OLED 기본 설정
+WIDTH  = 128                                            # oled display width
+HEIGHT = 64                                             # oled display height
+
+i2c = I2C(1, scl=machine.Pin(15), sda=machine.Pin(14), freq=200000)       # Init I2C using pins GP8 & GP9 (default I2C0 pins)
+print("I2C Address      : "+hex(i2c.scan()[0]).upper()) # Display device address
+print("I2C Configuration: "+str(i2c))                   # Display I2C config
+
+oled = SSD1306_I2C(WIDTH, HEIGHT, i2c)                  # Init oled display
+
+
+# Raspberry Pi logo as 32x32 bytearray
+buffer = bytearray(b"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|?\x00\x01\x86@\x80\x01\x01\x80\x80\x01\x11\x88\x80\x01\x05\xa0\x80\x00\x83\xc1\x00\x00C\xe3\x00\x00~\xfc\x00\x00L'\x00\x00\x9c\x11\x00\x00\xbf\xfd\x00\x00\xe1\x87\x00\x01\xc1\x83\x80\x02A\x82@\x02A\x82@\x02\xc1\xc2@\x02\xf6>\xc0\x01\xfc=\x80\x01\x18\x18\x80\x01\x88\x10\x80\x00\x8c!\x00\x00\x87\xf1\x00\x00\x7f\xf6\x00\x008\x1c\x00\x00\x0c \x00\x00\x03\xc0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")
+
+
+# OLED에 출력하기
+oled.fill(0)
+# 프레임버퍼로 로고 불러오기(이미지 사이즈는  32x32)
+fb = framebuf.FrameBuffer(buffer, 32, 32, framebuf.MONO_HLSB)
+# 프레임 버퍼에서 OLED 디스플레이로 이미지 옮기기
+oled.blit(fb, 96, 0)
+# 글자 넣기
+oled.text("SmartFarm", 0, 25)
+oled.text("  has been", 0, 35)
+oled.text("    initialized.", 0, 45)
+# 이미지와 글자가 보여지도록 하기
+oled.show()
+
 
 # 네오픽셀의 셀 갯수, PIO상태, 핀번호 정의 
 numpix = 4
@@ -54,7 +85,7 @@ strip.brightness(150)
 
 
 # 버튼 핀 설정 
-button_pin = 29
+button_pin = 9
 button = machine.Pin(button_pin, machine.Pin.IN, machine.Pin.PULL_UP)
 current_location_index = 0
 previous_button_state = button.value()
@@ -166,4 +197,5 @@ while True:
             strip.show()
 
     time.sleep(0.1)  # Check the button state more frequently
+
 
