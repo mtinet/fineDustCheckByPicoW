@@ -11,10 +11,10 @@
 <img src="https://user-images.githubusercontent.com/13882302/230707541-13ac0fa9-da58-4920-aa5e-0cc93dffff38.png" alt="your_image_description" width="200" height="150">
 
 * [네오픽셀 WS2812B-4 5V 5050 RGB LED](https://ko.aliexpress.com/item/32645620129.html?gatewayAdapt=glo2kor)  
-![image](https://user-images.githubusercontent.com/13882302/230707501-7a17d3d6-bcad-4253-9b4d-25588d5b8f93.png)  
+<img src="https://user-images.githubusercontent.com/13882302/230707501-7a17d3d6-bcad-4253-9b4d-25588d5b8f93.png" alt="your_image_description" width="200" height="150">
 
 * 점퍼 와이어  
-![image](https://user-images.githubusercontent.com/13882302/230707618-cb20c432-5363-4cde-9287-bc0e29b64265.png)
+<img src="[https://user-images.githubusercontent.com/13882302/230707541-13ac0fa9-da58-4920-aa5e-0cc93dffff38.png](https://user-images.githubusercontent.com/13882302/230707618-cb20c432-5363-4cde-9287-bc0e29b64265.png)" alt="your_image_description" width="200" height="150">
 
 
 
