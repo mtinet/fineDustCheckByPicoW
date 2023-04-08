@@ -1,10 +1,15 @@
 # fineDustCheckByPicoW
 
+## 결과물  
+https://user-images.githubusercontent.com/13882302/230708215-949f96aa-df82-4557-bcba-3c269979c67e.mp4
+
+
 ## Air Polution Index   
 * Pico W를 활용해 Open Wether Map에서 받아온 공기 오염도의 공기질 인덱스에 따라 네오픽셀이 제어되도록 하는 코드  
 * 네오픽셀을 사용하므로 neopixel.py 파일이 같은 폴더에 있어야 함  
 * 시간 정보를 표시할 때는 timezoneChange.py 파일이 같은 폴더에 있어야 함  
 * 시간 정보를 표시하고 싶지 않을 때는 fineDust.py 파일의 7번 줄, 89~92번 줄을 주석처리함  
+
 
 ## 회로도  
 | pico W  | neopixel |
@@ -25,7 +30,7 @@
 <img src="https://user-images.githubusercontent.com/13882302/230707618-cb20c432-5363-4cde-9287-bc0e29b64265.png" alt="your_image_description" width="200" height="150">
 
 
-
+## 메인소스코드  
 ```python
 # This code was written by Juhyun Kim.
 
