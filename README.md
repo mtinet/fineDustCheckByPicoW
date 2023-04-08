@@ -26,7 +26,7 @@
 <img src="https://user-images.githubusercontent.com/13882302/230707618-cb20c432-5363-4cde-9287-bc0e29b64265.png" alt="your_image_description" width="200" height="150">
 
 
-## 메인소스코드  
+## 베이스 소스코드  
 ```python
 # This code was written by Juhyun Kim.
 
