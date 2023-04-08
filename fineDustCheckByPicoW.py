@@ -20,7 +20,7 @@ SSID = 'U+Net454C'
 password = 'DDAE014478'
 
 
-# 네오픽셀의 셀 갯수 정의, PIO상태 정의 
+# 네오픽셀의 셀 갯수, PIO상태, 핀번호 정의 
 numpix = 4
 PIO = 0
 Pin = 0
