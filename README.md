@@ -69,9 +69,9 @@
     </tr>
     <tr>
       <td style="text-align: center;">GND</td>
-      <td>GND</td>
-      <td>GND</td>
-      <td>GND</td>
+      <td style="text-align: center;">GND</td>
+      <td style="text-align: center;">GND</td>
+      <td style="text-align: center;">GND</td>
     </tr>
   </tbody>
 </table>
