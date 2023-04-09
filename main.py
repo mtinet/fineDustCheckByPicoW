@@ -23,14 +23,14 @@ API_KEY = '24109ddecb29a5405afe2a8df42c5e34'
 # 네오픽셀의 셀 갯수, PIO상태, 핀번호 정의 
 numpix = 4
 PIO = 0
-Pin = 0
+Pin = 22
 # 네오픽셀이 RGB타입일 때 네오픽셀 수, PIO상태, 핀번호, 네오픽셀 타입 순으로 선택, 밝기 지정 
 strip = Neopixel(numpix, PIO, Pin, "RGB")
 # 밝기 설정(0~255)
 strip.brightness(150)
 
 # 버튼 핀 설정 
-button_pin = 22
+button_pin = 21
 debounce_time = 50 # 채터링 현상 방지용
 
 current_location_index = 0
