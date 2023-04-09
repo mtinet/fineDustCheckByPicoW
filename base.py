@@ -25,7 +25,7 @@ numpix = 4
 PIO = 0
 Pin = 0
 
-# 네오픽셀이 RGB타입일 때 네오픽셀 수, PIO상태, 핀번호, 네오픽셀 타입 순으로 선택
+# 네오픽셀이 RGB타입일 때 네오픽셀 수, PIO상태, 핀번호, 네오픽셀 타입 순으로 선택, 밝기 지정 
 strip = Neopixel(numpix, PIO, Pin, "RGB")
 
 # 밝기 설정(0~255)
