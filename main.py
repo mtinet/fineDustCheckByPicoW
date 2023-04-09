@@ -74,8 +74,8 @@ def init_wifi():
 
 # OLED 설정 
 def init_oled():
-    # Init I2C using pins GP15 & GP14 (default I2C1 pins)
-    i2c = I2C(1, scl=machine.Pin(15), sda=machine.Pin(14), freq=200000)       
+    # Init I2C using pins GP17 & GP16 (default I2C1 pins)
+    i2c = I2C(0, scl=machine.Pin(17), sda=machine.Pin(16), freq=200000)       
     print("I2C Address      : "+hex(i2c.scan()[0]).upper()) # Display device address
     print("I2C Configuration: "+str(i2c))                   # Display I2C config
     oled = SSD1306_I2C(WIDTH, HEIGHT, i2c)                  # Init oled display
