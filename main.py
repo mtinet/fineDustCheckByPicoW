@@ -1,6 +1,7 @@
 # This code was written by Juhyun Kim.
 
 import time
+import utime
 from neopixel import Neopixel
 import network
 import urequests
@@ -181,18 +182,12 @@ def check_button():
     return False
 
 # 초기 설정(locations 중 첫번째 도시)
-urlWeather = f'http://api.openweathermap.org/data/2.5/weather?lat={locations[0][1]}&lon={locations[0][2]}&appid={API_KEY}'
-response = urequests.get(urlWeather)
-dataWeather = response.json()
-
-urlAQI = f'http://api.openweathermap.org/data/2.5/air_pollution?lat={locations[0][1]}&lon=locations[0][2]&appid={API_KEY}'
-response = urequests.get(urlAQI)
-dataAQI = response.json()
-
 air_quality_index = get_air_quality_index(locations[0][1], locations[0][2], API_KEY)
 set_neopixel_color(air_quality_index)
 print()
 
+# 시간 업데이트를 위한 이전 시간 저장 
+last_time_update = utime.time() 
 
 while True:
     if check_button():
@@ -213,5 +208,12 @@ while True:
             print("Error:", e)
             color = (0, 0, 0)  # Black
             strip.show()
+        
+    current_time = utime.time()
+    if current_time - last_time_update >= 60: 
+        air_quality_index = get_air_quality_index(lat, lon, API_KEY)
+        set_neopixel_color(air_quality_index)
+        print()
+        last_time_update = current_time 
 
     time.sleep(0.1)  # Check the button state more frequently
