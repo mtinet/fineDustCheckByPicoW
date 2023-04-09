@@ -22,6 +22,7 @@
     <table>
       <thead>
         <tr>
+          <th>회로도</th>
           <th>pico W</th>
           <th>neopixel</th>
           <th>OLED</th>
@@ -29,6 +30,9 @@
         </tr>
       </thead>
       <tbody>
+        <tr>
+          <td  rowspan="4"></td>
+        </tr>
         <tr>
           <td style="text-align: center;">GPIO 16</td>
           <td></td>
