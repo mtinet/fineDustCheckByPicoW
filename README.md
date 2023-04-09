@@ -17,7 +17,7 @@
 * timezoneChange.py: 시간정보용 라이브러리  
 
 ## 회로도  
-<table align="left">
+<table>
   <thead>
     <tr>
       <th>회로도</th>
