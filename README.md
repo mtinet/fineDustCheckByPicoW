@@ -25,14 +25,14 @@
 
 | pico W  | OLED |
 |:------:|:--------:|
-| GPIO 14 | SDA     |
-| GPIO 15 | SCL     |
+| GPIO 16 | SDA     |
+| GPIO 17 | SCL     |
 | 3.3V    | VCC       |
 | GND    | GND      |
 
 | pico W  | button |
 |:------:|:--------:|
-| GPIO 9 | sig     |
+| GPIO 22 | sig     |
 | GND    | GND      |
 
 
