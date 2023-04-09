@@ -41,7 +41,7 @@
         <a href="https://ko.aliexpress.com/item/32645620129.html?gatewayAdapt=glo2kor" width="400">네오픽셀 WS2812B-4 5V 5050 RGB LED</a>
       </th>
       <th>
-        <a href="https://www.devicemart.co.kr/goods/view?no=14575953&gclid=Cj0KCQjw_r6hBhDdARIsAMIDhV-v3VZrlmb37R6pssNcH_zarbtBYylBcQEg87EjIj7Ci5817f7wSjMaAiILEALw_wcB" width="400">점퍼 와이어 </a>
+        <a href="https://eduino.kr/product/detail.html?product_no=102&gclid=Cj0KCQjwxMmhBhDJARIsANFGOSsNqpma6XJuq8dfpX22MHuRTblxT6HzfVXb519ahmjo9ek3wxoWFHMaAoSTEALw_wcB">점퍼 와이어 </a>
       </th>
     </tr>
   </thead>
