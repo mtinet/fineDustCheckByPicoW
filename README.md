@@ -29,7 +29,7 @@
   </thead>
   <tbody>
     <tr>
-      <td rowspan="7"><img src="https://user-images.githubusercontent.com/13882302/230762399-2a194240-cd07-4ee1-a5f5-311f8c8b714e.png" width="300"></td>
+      <td rowspan="8"><img src="https://user-images.githubusercontent.com/13882302/230762399-2a194240-cd07-4ee1-a5f5-311f8c8b714e.png"></td>
     </tr>
     <tr>
       <td style="text-align: center;">GPIO 16</td>
