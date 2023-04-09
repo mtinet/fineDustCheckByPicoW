@@ -17,7 +17,7 @@
 * timezoneChange.py: 시간정보용 라이브러리  
 
 ## 회로도  
-<table>
+<table align="center">
   <thead>
     <tr>
       <th>회로도</th>
@@ -32,16 +32,16 @@
       <td rowspan="8"><img src="https://user-images.githubusercontent.com/13882302/230762399-2a194240-cd07-4ee1-a5f5-311f8c8b714e.png" width="300"></td>
     </tr>
     <tr>
-      <td style="text-align: center;">GPIO 16</td>
-      <td></td>
-      <td>SDA</td>
-      <td></td>
+      <td align="center">GPIO 16</td>
+      <td align="center"></td>
+      <td align="center">SDA</td>
+      <td align="center"></td>
     </tr>
     <tr>
-      <td style="text-align: center;">GPIO 17</td>
-      <td></td>
-      <td>SCL</td>
-      <td></td>
+      <td align="center">GPIO 17</td>
+      <td align="center"></td>
+      <td align="center">SCL</td>
+      <td align="center"></td>
     </tr>
     <tr>
       <td style="text-align: center;">GPIO 21</td>
