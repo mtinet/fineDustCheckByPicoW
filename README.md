@@ -34,7 +34,7 @@
 <table>
   <thead>
     <tr>
-      <th><a href="[https://www.example.com](https://www.devicemart.co.kr/goods/view?no=14575953&gclid=Cj0KCQjw_r6hBhDdARIsAMIDhV-v3VZrlmb37R6pssNcH_zarbtBYylBcQEg87EjIj7Ci5817f7wSjMaAiILEALw_wcB)">라즈베리파이 피코 W</a>)</th>
+      <th><a href="[https://www.example.com](https://www.devicemart.co.kr/goods/view?no=14575953&gclid=Cj0KCQjw_r6hBhDdARIsAMIDhV-v3VZrlmb37R6pssNcH_zarbtBYylBcQEg87EjIj7Ci5817f7wSjMaAiILEALw_wcB">라즈베리파이 피코 W</a>)</th>
       <th>Header 2</th>
     </tr>
   </thead>
