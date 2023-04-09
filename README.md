@@ -75,7 +75,7 @@
     </table>
   </div>
   <div style="flex-grow: 1;">
-    <img src="https://user-images.githubusercontent.com/13882302/230762399-2a194240-cd07-4ee1-a5f5-311f8c8b714e.png">
+    <img src="https://user-images.githubusercontent.com/13882302/230762399-2a194240-cd07-4ee1-a5f5-311f8c8b714e.png" width="300">
   </div>
 </div>
 
