@@ -54,7 +54,7 @@ strip.brightness(150)
 
 
 # 버튼 핀 설정 
-button_pin = 9
+button_pin = 22
 button = machine.Pin(button_pin, machine.Pin.IN, machine.Pin.PULL_UP)
 current_location_index = 0
 previous_button_state = button.value()
