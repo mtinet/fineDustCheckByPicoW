@@ -44,34 +44,34 @@
       <td align="center"></td>
     </tr>
     <tr>
-      <td style="text-align: center;">GPIO 21</td>
-      <td></td>
-      <td></td>
-      <td>Sig</td>
+      <td align="center">GPIO 21</td>
+      <td align="center"></td>
+      <td align="center"></td>
+      <td align="center">Sig</td>
     </tr>
     <tr>
-      <td style="text-align: center;">GPIO 22</td>
-      <td>IN</td>
-      <td></td>
-      <td></td>
+      <td align="center">GPIO 22</td>
+      <td align="center">IN</td>
+      <td align="center"></td>
+      <td align="center"></td>
     </tr>
     <tr>
-      <td style="text-align: center;">VBUS</td>
-      <td>VCC</td>
-      <td></td>
-      <td></td>
+      <td align="center">VBUS</td>
+      <td align="center">VCC</td>
+      <td align="center"></td>
+      <td align="center"></td>
     </tr>
     <tr>
-      <td style="text-align: center;">3.3V</td>
-      <td></td>
-      <td>VCC</td>
-      <td></td>
+      <td align="center">3.3V</td>
+      <td align="center"></td>
+      <td align="center">VCC</td>
+      <td align="center"></td>
     </tr>
-    <tr style="text-align: center;">
-      <td style="text-align: center;">GND</td>
-      <td style="text-align: center;">GND</td>
-      <td style="text-align: center;">GND</td>
-      <td style="text-align: center;">GND</td>
+    <tr>
+      <td align="center">GND</td>
+      <td align="center">GND</td>
+      <td align="center">GND</td>
+      <td align="center">GND</td>
     </tr>
   </tbody>
 </table>
