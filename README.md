@@ -17,23 +17,17 @@
 * timezoneChange.py: 시간정보용 라이브러리  
 
 ## 회로도  
-| pico W  | neopixel |
-|:------:|:--------:|
-| GPIO 22 | IN     |
-| VBUS   | VCC       |
-| GND    | GND      |
+![image](https://user-images.githubusercontent.com/13882302/230762399-2a194240-cd07-4ee1-a5f5-311f8c8b714e.png)
 
-| pico W  | OLED |
-|:------:|:--------:|
-| GPIO 16 | SDA     |
-| GPIO 17 | SCL     |
-| 3.3V    | VCC       |
-| GND    | GND      |
-
-| pico W  | button |
-|:------:|:--------:|
-| GPIO 21 | sig     |
-| GND    | GND      |
+| pico W  | neopixel | OLED     | button   |
+|:-------:|:--------:|:--------:|:--------:|
+| GPIO 16 |          | SDA      |          |
+| GPIO 17 |          | SCL      |          |
+| GPIO 21 |          |          | Sig      | 
+| GPIO 22 | IN       |          |          |
+| VBUS    | VCC      |          |          |
+| 3.3V    |          | VCC      |          |
+| GND     | GND      | GND      |  GND     |
 
 
 ## 재료  
