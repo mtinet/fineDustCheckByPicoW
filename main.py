@@ -30,7 +30,7 @@ strip = Neopixel(numpix, PIO, Pin, "RGB")
 strip.brightness(150)
 
 # 버튼 핀 설정 
-button_pin = 9
+button_pin = 22
 debounce_time = 50 # 채터링 현상 방지용
 
 current_location_index = 0
