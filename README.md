@@ -17,6 +17,10 @@
 * timezoneChange.py: 시간정보용 라이브러리  
 
 ## 회로도  
+<table>
+  <thead>
+    <tr>
+      <th>
 <img src="https://user-images.githubusercontent.com/13882302/230762399-2a194240-cd07-4ee1-a5f5-311f8c8b714e.png" alt="your_image_description" width="400">
 
 | pico W  | neopixel | OLED     | button   |
@@ -29,6 +33,61 @@
 | 3.3V    |          | VCC      |          |
 | GND     | GND      | GND      |  GND     |
 
+<table>
+  <thead>
+    <tr>
+      <th>pico W</th>
+      <th>neopixel</th>
+      <th>OLED</th>
+      <th>button</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center;">GPIO 16</td>
+      <td></td>
+      <td>SDA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">GPIO 17</td>
+      <td></td>
+      <td>SCL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">GPIO 21</td>
+      <td></td>
+      <td></td>
+      <td>Sig</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">GPIO 22</td>
+      <td>IN</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">VBUS</td>
+      <td>VCC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">3.3V</td>
+      <td></td>
+      <td>VCC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">GND</td>
+      <td>GND</td>
+      <td>GND</td>
+      <td>GND</td>
+    </tr>
+  </tbody>
+</table>        
+        
 
 ## 재료  
 <table>
