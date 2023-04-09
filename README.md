@@ -48,13 +48,13 @@
   <tbody>
     <tr>
       <td>
-        <img src="https://user-images.githubusercontent.com/13882302/230707541-13ac0fa9-da58-4920-aa5e-0cc93dffff38.png" alt="Image description 1" width="100">
+        <img src="https://user-images.githubusercontent.com/13882302/230707541-13ac0fa9-da58-4920-aa5e-0cc93dffff38.png" style="display: block; margin: 0 auto;">
       </td>
       <td>
-        <img src="https://user-images.githubusercontent.com/13882302/230707501-7a17d3d6-bcad-4253-9b4d-25588d5b8f93.png" alt="Image description 2" width="100">
+        <img src="https://user-images.githubusercontent.com/13882302/230707501-7a17d3d6-bcad-4253-9b4d-25588d5b8f93.png" style="display: block; margin: 0 auto;">
       </td>
       <td>
-        <img src="https://user-images.githubusercontent.com/13882302/230707618-cb20c432-5363-4cde-9287-bc0e29b64265.png" alt="Image description 2" width="100">
+        <img src="https://user-images.githubusercontent.com/13882302/230707618-cb20c432-5363-4cde-9287-bc0e29b64265.png" style="display: block; margin: 0 auto;">
       </td>
     </tr>
   </tbody>
