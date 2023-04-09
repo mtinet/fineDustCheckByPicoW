@@ -19,7 +19,7 @@
 ## 회로도  
 | pico W  | neopixel |
 |:------:|:--------:|
-| GPIO 0 | IN     |
+| GPIO 22 | IN     |
 | VBUS   | VCC       |
 | GND    | GND      |
 
@@ -32,7 +32,7 @@
 
 | pico W  | button |
 |:------:|:--------:|
-| GPIO 22 | sig     |
+| GPIO 21 | sig     |
 | GND    | GND      |
 
 
