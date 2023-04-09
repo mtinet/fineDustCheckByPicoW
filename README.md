@@ -35,12 +35,15 @@
   <thead>
     <tr>
       <th>
-        <a href="https://www.devicemart.co.kr/goods/view?no=14575953&gclid=Cj0KCQjw_r6hBhDdARIsAMIDhV-v3VZrlmb37R6pssNcH_zarbtBYylBcQEg87EjIj7Ci5817f7wSjMaAiILEALw_wcB" width="400">라즈베리파이 피코 W</a>
+        <a href="https://www.devicemart.co.kr/goods/view?no=14575953&gclid=Cj0KCQjw_r6hBhDdARIsAMIDhV-v3VZrlmb37R6pssNcH_zarbtBYylBcQEg87EjIj7Ci5817f7wSjMaAiILEALw_wcB">라즈베리파이 피코 W</a>
       </th>
       <th>
-        <a href="https://ko.aliexpress.com/item/32645620129.html?gatewayAdapt=glo2kor" width="400">네오픽셀 WS2812B-4 5V 5050 RGB LED</a>
+        <a href="https://ko.aliexpress.com/item/32645620129.html?gatewayAdapt=glo2kor">네오픽셀 WS2812B-4 5V 5050 RGB LED</a>
       </th>
       <th>
+        <a href="https://robotscience.kr/goods/view?no=16073">OLED 1306</a>
+      </th>
+       <th>
         <a href="https://eduino.kr/product/detail.html?product_no=102&gclid=Cj0KCQjwxMmhBhDJARIsANFGOSsNqpma6XJuq8dfpX22MHuRTblxT6HzfVXb519ahmjo9ek3wxoWFHMaAoSTEALw_wcB">점퍼 와이어 </a>
       </th>
     </tr>
@@ -52,6 +55,9 @@
       </td>
       <td>
         <img src="https://user-images.githubusercontent.com/13882302/230707501-7a17d3d6-bcad-4253-9b4d-25588d5b8f93.png" style="display: block; margin: 0 auto;">
+      </td>
+      <td>
+        <img src="https://user-images.githubusercontent.com/13882302/230763376-d09c12a6-c16e-4d10-9f3c-6937890cfcd1.png" style="display: block; margin: 0 auto;">
       </td>
       <td>
         <img src="https://user-images.githubusercontent.com/13882302/230707618-cb20c432-5363-4cde-9287-bc0e29b64265.png" style="display: block; margin: 0 auto;">
