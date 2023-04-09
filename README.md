@@ -67,7 +67,7 @@
       <td>VCC</td>
       <td></td>
     </tr>
-    <tr>
+    <tr style="text-align: center;">
       <td style="text-align: center;">GND</td>
       <td style="text-align: center;">GND</td>
       <td style="text-align: center;">GND</td>
