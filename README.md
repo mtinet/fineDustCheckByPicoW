@@ -34,17 +34,17 @@
 <table>
   <thead>
     <tr>
-      <th>Header 1</th>
+      <th> [라즈베리파이 피코 W](https://www.devicemart.co.kr/goods/view?no=14575953&gclid=Cj0KCQjw_r6hBhDdARIsAMIDhV-v3VZrlmb37R6pssNcH_zarbtBYylBcQEg87EjIj7Ci5817f7wSjMaAiILEALw_wcB)</th>
       <th>Header 2</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>
-        <img src="[image_url_1](https://user-images.githubusercontent.com/13882302/230707541-13ac0fa9-da58-4920-aa5e-0cc93dffff38.png)" alt="Image description 1" width="100">
+        <img src="https://user-images.githubusercontent.com/13882302/230707541-13ac0fa9-da58-4920-aa5e-0cc93dffff38.png" alt="Image description 1" width="100">
       </td>
       <td>
-        <img src="[image_url_2](https://user-images.githubusercontent.com/13882302/230707501-7a17d3d6-bcad-4253-9b4d-25588d5b8f93.png)" alt="Image description 2" width="100">
+        <img src="https://user-images.githubusercontent.com/13882302/230707501-7a17d3d6-bcad-4253-9b4d-25588d5b8f93.png" alt="Image description 2" width="100">
       </td>
     </tr>
   </tbody>
